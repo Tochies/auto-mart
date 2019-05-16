@@ -43,12 +43,31 @@
         </div>
         <div class="sidebar">   
             <div class="search">
-                <div class="car-status">
-                    <select>
-                        <option value="new">New</option>
-                        <option value="used">Used</option>
-                    </select>
-                </div>
+                <form action="">
+                    <div class="car-status">
+                        <select>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                        </select>
+                    </div>
+                    <div class="search-type">
+                        <input list="car-type" name="car-types" placeholder="Body Type"/>
+                        <datalist id="car-type">
+                            <option value="Truck">
+                            <option value="Trailer">
+                            <option value="Car">
+                            <option value="Van">
+                        </datalist>
+                    </div>
+                    <div class="search-range">
+                        <h3>Search by Price</h3>
+                        <input id="p-min" placeholder="Minimum price">
+                        <input id="p-max" placeholder="Maximum price">
+                    </div>
+                    <div class="search-submit">
+                        <button type="submit">Filter</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
