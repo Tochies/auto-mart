@@ -4,44 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User Sign up</title>
+    <link type="text/css" rel="stylesheet" href="UI/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Auto Mart</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src=""/>
+                <h2><a href="UI/html/all-unsold.html">Auto - Mart</a></h2>
             </div>
             <div class="menu">
                 <ul>
-                    <li>Sign up</li>
-                    <li>Sign in</li>
+                    <li><a href="UI/html/sign-up.html">Sign up</a></li>
+                    <li><a href="UI/html/sign-in.html">Sign in</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="content">
-            <div class="cards">
-                <div class="card-head">
-                    <span id="card-make">Toyota </span>
-                    <span id="card-model"> Camry</span>
-                </div>
-                <div class="card-content">
-                    <img src="">
-                    <div class="card-others">
-                        <h2 id="card-price"><span id="card-bold">Price : </span>#1,000,000</h2>
-                        <h4 id="card-make"><span id="card-bold">Make : </span>Toyota</h4>
-                        <h4 id="card-model"><span id="card-bold">Model : </span>Camry</h4>
-                        <h4 id="card-type"><span id="card-bold">Body Type : </span>Sedan</h4>
-                    </div>
-                </div>
-                <div class="card-foot">
-                    <button>View Details</button>
-                </div>
-            </div>
-        </div>
-        <div class="sidebar">   
+        <div class="topbar">   
             <div class="search">
                 <form action="">
                     <div class="car-status">
@@ -59,15 +42,211 @@
                             <option value="Van">
                         </datalist>
                     </div>
+                    <div class="search-make">
+                        <input list="car-make" name="car-make" placeholder="Manufacturer"/>
+                        <datalist id="car-make">
+                            <option value="Toyota">
+                            <option value="Volkwagen">
+                            <option value="Renault">
+                            <option value="Peugeot">
+                        </datalist>
+                    </div>
                     <div class="search-range">
-                        <h3>Search by Price</h3>
-                        <input id="p-min" placeholder="Minimum price">
-                        <input id="p-max" placeholder="Maximum price">
+                        <input id="p-min" placeholder="Minimum price" type="number">
+                        <input id="p-max" placeholder="Maximum price" type="number">
                     </div>
                     <div class="search-submit">
-                        <button type="submit">Filter</button>
+                        <input type="submit" value="Filter Cars">
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Toyota </span>
+                        <span id="card-model"> Camry</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/toyota/toyota_camry_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#1,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Toyota</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Camry</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Sedan</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Toyota </span>
+                        <span id="card-model"> Camry</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/volkswagen/volkswagen_arteon_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#2,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>volkswagen</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Arteon</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Sedan</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Toyota </span>
+                        <span id="card-model"> Camry</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/toyota/toyota_4runner_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#4,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Toyota</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>4Runner</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>SUV</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Toyota </span>
+                        <span id="card-model"> Camry</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/toyota/toyota_tacoma_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#7,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Toyota</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Tacoma</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Pick Up</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Volkswagen </span>
+                        <span id="card-model"> Golf</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/volkswagen/volkswagen_e-golf_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#3,500,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>volkswagen</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Golf</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Coupe</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Toyota </span>
+                        <span id="card-model"> Avalon</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/toyota/toyota_avalon_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#4,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Toyota</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Avalon</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Sedan</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Toyota </span>
+                        <span id="card-model"> Highlander</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/toyota/toyota_highlander_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#10,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Toyota</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Highlander</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>SUV</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Volkswagen </span>
+                        <span id="card-model"> Passat</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/volkswagen/volkswagen_passat_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#3,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Volkswagen</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Passat</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Hatchback</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-head">
+                        <span id="card-make">Volkswagen </span>
+                        <span id="card-model"> Beetle</span>
+                    </div>
+                    <div class="card-content">
+                        <img src="UI/assets/dummy/new/volkswagen/volkswagen_beetle_new.png">
+                        <div class="card-others">
+                            <p id="card-price"><span id="card-bold">Price : </span>#6,000,000</p>
+                            <p id="card-make"><span id="card-bold">Make : </span>Volkswagen</p>
+                            <p id="card-model"><span id="card-bold">Model : </span>Beetle</p>
+                            <p id="card-type"><span id="card-bold">Body Type : </span>Sedan</p>
+                            <p id="card-state"><span id="card-bold">State : </span>New</p>
+                        </div>
+                    </div>
+                    <div class="card-foot">
+                        <button>View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="ad-text">
+                    <h2>Welcome to Auto-Mart</h2>
+                    <p>Auto mart makes it easy to sell or buy an auto mobile of any type.</p>
+                    <img src="UI/assets/images/home-ad.jpg">
+                    <h2>Want to sell an Auto ?</h2>
+                    <p>click to sell as a <a href="">Private seller</a> or as a <a href="" >Dealer</a></p>
+                    <hr>
+                    <h2>Need a new Auto ?</h2>
+                    <p>Just register or sign in</p>
+                    <p>Click on your choice car to purchase</p>
+                </div>
             </div>
         </div>
     </main>
