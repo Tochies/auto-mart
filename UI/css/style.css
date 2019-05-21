@@ -5,7 +5,9 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(245, 243, 243);
 }
-a{ text-decoration: none }
+a{ text-decoration: none;
+    color:whitesmoke;
+}
 a:visited{ color: whitesmoke; }
 
 /* Navigation and header styling*/
